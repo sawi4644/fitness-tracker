@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const fitnessSchema = new Schema({
     day: {
         type: Date,
+        default: Date.now
     },
     exercises: [
         {
@@ -15,11 +16,11 @@ const fitnessSchema = new Schema({
             name: {
                 type: String,
                 trim: true,
-                required: true
+                required: [true, 'What was your workout?']
             },
             duration: {
                 type: Number,
-                required: true
+                required: [true, 'How long did you work out for?']
             },
             weight: {
                 type: Number
@@ -38,6 +39,9 @@ const fitnessSchema = new Schema({
     ]
 }, 
 { timestamps: true });
+
+
+
 
 const Workout = mongoose.model('Workout', fitnessSchema);
 module.exports = Workout;
