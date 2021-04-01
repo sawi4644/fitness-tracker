@@ -46,23 +46,25 @@ app.get("/", (req, res) => {
 });
 
 app.get("/exercise", (req, res) => {
-    const newWorkout = new Workout(
-      { 
-      day: Date,
-      exercises:[],
-  });
-    workout.save()
-    .then((result) =>{
-      res.send(result)
-    })
-    .catch((err)=>{
-      console.log(err)
-    })
-  });
+  res.sendFile(path.join(__dirname, "../public/exercise.html"));
+})
+//     const newWorkout = new Workout(
+//       { 
+//       day: Date,
+//       exercises:[],
+//   });
+//     workout.save()
+//     .then((result) =>{
+//       res.send(result)
+//     })
+//     .catch((err)=>{
+//       console.log(err)
+//     })
+//   });
 
 
 // routes
-app.get("/exercise", (req, res) => {
+app.get("/api/exercise", (req, res) => {
   Workout.find()
   .then((result) =>{
     res.send(result);
