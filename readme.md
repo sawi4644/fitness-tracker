@@ -11,8 +11,8 @@ Created Mongo database with a Mongoose schema and handle routes with Express.
 A consumer will reach their fitness goals more quickly when they track their workout progress.
 
 ## Deployed Application 
-![deployed](../img/deployed)
-![add-workout](/img/deployed-2)
+![deployed](/img/deployed.png)
+![add-workout](/img/deployed-2.png)
 
 ## Collaboration
 
