@@ -14,3 +14,11 @@ A consumer will reach their fitness goals more quickly when they track their wor
 ![deployed](./img/deployed)
 ![add-workout](/img/deployed-2)
 
+## Collaboration
+
+Yes, I am open to collabing! Reach out below :) 
+
+## Contact
+Email: sarakatewilson98@gmail.com
+<br>
+Github: sawi4644
